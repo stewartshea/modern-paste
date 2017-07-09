@@ -12,4 +12,4 @@ sed -i -e "s|DATABASE_USER\s*=\s*'modern_paste'|DATABASE_USER = '$DATABASE_USER'
 sed -i -e "s|DATABASE_PASSWORD\s*=\s*'U4bV96S7uchYnJv4WK4akKfzdqKhDFLOpfm0XspYkTF7gyJawhmpZnBi1KdAQNPqxqoUbNDZzuxX0LOgyMc2g8B2NS2j2Fib'|DATABASE_PASSWORD = '$DATABASE_PASSWORD'|g" /var/www/modern-paste/app/config.py
 sed -i -e "s|ENABLE_USER_REGISTRATION\s*=\s*True|ENABLE_USER_REGISTRATION = $ENABLE_USER_REGISTRATION|g" /var/www/modern-paste/app/config.py
 sed -i -e "s|REQUIRE_LOGIN_TO_PASTE\s*=\s*False|REQUIRE_LOGIN_TO_PASTE = $REQUIRE_LOGIN_TO_PASTE|g" /var/www/modern-paste/app/config.py
-sed -i -e "s|FLASK_SECRET_KEY|#FLASK_SECRET_KEY|g" /var/www/modern-paste/app/config.py
+sed -i -e "s|FLASK_SECRET_KEY|# FLASK_SECRET_KEY|g" /var/www/modern-paste/app/config.py
