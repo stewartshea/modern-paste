@@ -36,7 +36,7 @@ COPY modernpaste.conf /etc/apache2/sites-available/000-default.conf
 COPY flaskKey.py /var/www/modern-paste/flaskKey.py
 
 RUN git clone https://github.com/LINKIWI/modern-paste /var/www/modern-paste && \
-    chown -R www-data:www-data /var/www/modern-paste && \
+    #chown -R www-data:www-data /var/www/modern-paste && \
     a2enmod rewrite && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /etc/apache2/sites-available/default-ssl.conf && \
