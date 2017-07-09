@@ -1,9 +1,9 @@
 #!/usr/bin/bash
 
 sed -i -e "s|DOMAIN\s*=\s*'example.com'|DOMAIN = '$DOMAIN'|g" /var/www/modern-paste/app/config.py
-sed -i -e "s|DEFAULT_HTTPS\s*=\s*True|DEFAULT_HTTPS = $DEFAULT_HTTPs|g" /var/www/modern-paste/app/config.py
+sed -i -e "s|DEFAULT_HTTPS\s*=\s*True|DEFAULT_HTTPS = $DEFAULT_HTTPS|g" /var/www/modern-paste/app/config.py
 sed -i -e "s|USE_ENCRYPTED_IDS\s*=\s*False|USE_ENCRYPTED_IDS = $USE_ENCRYPTED_IDS|g" /var/www/modern-paste/app/config.py
-sed -i -e "s|ENABLE_PASTE_ATTACHMENTS\s*=\s*True|ENABLE_PASTE_ATTACHMENTS = $ENABLE_PASTE_ATTACHMENTs|g" /var/www/modern-paste/app/config.py
+sed -i -e "s|ENABLE_PASTE_ATTACHMENTS\s*=\s*True|ENABLE_PASTE_ATTACHMENTS = $ENABLE_PASTE_ATTACHMENTS|g" /var/www/modern-paste/app/config.py
 sed -i -e "s|MAX_ATTACHMENT_SIZE\s*=\s*0|MAX_ATTACHMENT_SIZE = $MAX_ATTACHMENT_SIZE|g" /var/www/modern-paste/app/config.py
 sed -i -e "s|ATTACHMENTS_DIR\s*=\s*'/var/www/modern-paste-attachments'|ATTACHMENTS_DIR = '$ATTACHMENTS_DIR'|g" /var/www/modern-paste/app/config.py
 sed -i -e "s|DATABASE_HOST\s*=\s*'localhost'|DATABASE_HOST = '$DATABASE_HOST'|g" /var/www/modern-paste/app/config.py
