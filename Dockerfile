@@ -28,8 +28,7 @@ RUN apt-get update -y && \
     apache2 \
     libapache2-mod-wsgi \
     nodejs-legacy
-
-    
+  
 
 COPY entrypoint /entrypoint
 COPY modernpaste.conf /etc/apache2/sites-available/000-default.conf
