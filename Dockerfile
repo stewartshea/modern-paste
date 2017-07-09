@@ -13,7 +13,7 @@ RUN apt-get update -y && \
     apt-get upgrade -y && \
     apt-get install -y software-properties-common python-software-properties && \
     add-apt-repository -y ppa:fkrull/deadsnakes && \
-    apt-get update \ &&
+    apt-get update && \
     apt-get install -y \
     git \
     make \
@@ -36,7 +36,7 @@ COPY modernpaste.conf /etc/apache2/sites-available/000-default.conf
 COPY flaskKey.py /var/www/modern-paste/flaskKey.py
 
 RUN git clone https://github.com/LINKIWI/modern-paste /var/www/modern-paste && \
-    git config --global url."https://".insteadOf git://
+    git config --global url."https://".insteadOf git:// \
     chown -R www-data:www-data /var/www/modern-paste && \
     a2enmod rewrite && \
     apt-get clean && \
