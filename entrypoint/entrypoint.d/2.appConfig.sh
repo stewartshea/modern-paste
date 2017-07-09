@@ -1,5 +1,4 @@
 #!/usr/bin/bash
-#Configure app/config.py
 
 sed -i -e "s|DOMAIN\s*=\s*'example.com'|DOMAIN = '$DOMAIN'|g" /var/www/modern-paste/app/config.py
 sed -i -e "s|DEFAULT_HTTPS\s*=\s*True|DEFAULT_HTTPS = $DEFAULT_HTTPs|g" /var/www/modern-paste/app/config.py
