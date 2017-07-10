@@ -1,7 +1,7 @@
 [![](https://images.microbadger.com/badges/image/tlnk/modern-paste.svg)](https://microbadger.com/images/tlnk/modern-paste "Get your own image badge on microbadger.com")
 [![](https://images.microbadger.com/badges/version/tlnk/modern-paste.svg)](https://microbadger.com/images/tlnk/modern-paste "Get your own version badge on microbadger.com")
 
-[logo]:http://i.imgur.com/BPvBFl2.png "Image"
+![Screenshot](http://i.imgur.com/BPvBFl2.png)
 
 # Supported tags and respective
 
@@ -123,15 +123,12 @@ Then go to http://localhost/ and go through the wizard.
 
 All data beyond what lives in the database (file uploads, etc) is stored within the default volume /var/www/owncloud. With this volume, ownCloud will only be updated when the file version.php is not present.
 
-* -v /<mydatalocation>:/var/www/modern-paste-attachments
+* -v /`<mydatalocation>`:/var/www/modern-paste-attachments
+
+## Via docker-compose
 
 ```
-
-## via docker-compose
-
-Example docker-compose.yml for modern-paste:
-
-``` Docker
+Docker
 version: '2'
 
 services:
