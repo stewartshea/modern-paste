@@ -27,7 +27,8 @@ RUN apt-get update -y && \
     npm \
     apache2 \
     libapache2-mod-wsgi \
-    nodejs-legacy
+    nodejs-legacy \
+    ruby-all-dev
   
 
 COPY entrypoint /entrypoint
